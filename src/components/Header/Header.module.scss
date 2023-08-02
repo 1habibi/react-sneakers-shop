@@ -1,0 +1,63 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 1px solid #eaeaea;
+
+  .headerLeft{
+    display: flex;
+    align-items: center;
+
+    .logo{
+      margin-right: 15px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .logoTitle{
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logoSubtitle{
+      font-size: 14px;
+      color: #9d9d9d;
+    }
+  }
+
+  .headerRight{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .cart{
+      display: flex;
+      align-items: center;
+
+      .cartIcon{
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      .money{
+        font-size: 14px;
+        color: #5c5c5c;
+        font-weight: 600;
+      }
+    }
+
+    .like{
+      max-height: 18px;
+      .likeIcon{
+        cursor: pointer;
+      }
+    }
+
+    .userIcon{
+
+    }
+  }
+}

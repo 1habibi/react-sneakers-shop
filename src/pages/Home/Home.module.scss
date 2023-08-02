@@ -1,0 +1,45 @@
+.content{
+  padding: 45px 60px;
+
+  .carousel{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contentHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title{
+      font-weight: 700;
+      font-size: 32px;
+    }
+
+    .searchBlock{
+      border: 1px solid #f3f3f3;
+      padding: 15px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+
+      .searchIcon{
+        margin-right: 14px;
+      }
+
+      .input::placeholder{
+        font-size: 14px;
+        color: #c4c4c4;
+      }
+    }
+  }
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+  }
+}

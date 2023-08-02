@@ -1,0 +1,31 @@
+.qtyInput{
+  display: flex;
+
+  .change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2aaf08;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  input{
+    max-width: 55px;
+    text-align: center;
+    font-weight: 700;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0 5px;
+  }
+
+  .disabled{
+    background-color: #989797;
+  }
+}
