@@ -11,6 +11,7 @@ export const Card = ({
   imageUrl,
   title,
   price,
+  favorited,
   loading = false,
 }) => {
   const { isItemAdded, isItemFavorite } = useContext(AppContext)
@@ -24,6 +25,14 @@ export const Card = ({
   const onFavoriteClick = () => {
     onFavorite({ id, parentID: id, imageUrl, title, price })
     setIsFavorite(!isFavorite)
+  }
+
+  const getsrc = () => {
+    if (favorited) {
+      return 'img/heart-liked.svg'
+    } else if (isItemFavorite(id)) {
+      return 'img/heart-liked.svg'
+    } else return 'img/heart-unliked.svg'
   }
 
   return (
@@ -49,14 +58,7 @@ export const Card = ({
             <div className={s.favorite}>
               {onFavorite && (
                 <button onClick={onFavoriteClick}>
-                  <img
-                    src={
-                      isItemFavorite(id)
-                        ? 'img/heart-liked.svg'
-                        : 'img/heart-unliked.svg'
-                    }
-                    alt="heart-unliked"
-                  />
+                  <img src={getsrc()} alt="heart-unliked" />
                 </button>
               )}
             </div>

@@ -9,10 +9,10 @@ export const Header = (props) => {
     <header className={s.header}>
       <Link to={'/react-sneakers-shop/'}>
         <div className={s.headerLeft}>
-          <img className={s.logo} src="img/logo.png" alt="logo" />
+          <img className={s.logo} src="img/logo.svg" alt="logo" />
           <div className={s.headerInfo}>
             <h3 className={s.logoTitle}>Sneakers Shop</h3>
-            <p className={s.logoSubtitle}>Магазин лучших кроссовок</p>
+            <p className={s.logoSubtitle}>Лучший магазин кроссовок</p>
           </div>
         </div>
       </Link>
