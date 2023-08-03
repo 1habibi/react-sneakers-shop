@@ -52,8 +52,8 @@ export const Card = ({
                   <img
                     src={
                       isItemFavorite(id)
-                        ? './img/heart-liked.svg'
-                        : './img/heart-unliked.svg'
+                        ? 'img/heart-liked.svg'
+                        : 'img/heart-unliked.svg'
                     }
                     alt="heart-unliked"
                   />
@@ -71,9 +71,7 @@ export const Card = ({
             {onPlus && (
               <button onClick={onPlusClick}>
                 <img
-                  src={
-                    isItemAdded(id) ? './img/btn-checked.svg' : './img/plus.svg'
-                  }
+                  src={isItemAdded(id) ? 'img/btn-checked.svg' : 'img/plus.svg'}
                   alt="addBtn"
                 />
               </button>

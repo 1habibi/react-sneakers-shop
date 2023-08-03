@@ -43,15 +43,11 @@ export const Home = ({
         <Carousel infinite>
           <Carousel.Page>
             <div className={cs.item}>
-              <img
-                className={cs.img}
-                src="./img/carousel/1.png"
-                alt="carousel"
-              />
+              <img className={cs.img} src="img/carousel/1.png" alt="carousel" />
             </div>
           </Carousel.Page>
           <Carousel.Page>
-            <img src="./img/carousel/1.png" alt="carousel" />
+            <img src="img/carousel/1.png" alt="carousel" />
           </Carousel.Page>
         </Carousel>
       </div>
@@ -60,7 +56,7 @@ export const Home = ({
           {searchValue ? `Поиск по запросу: ${searchValue}` : 'Все кроссовки'}
         </h1>
         <div className={s.searchBlock}>
-          <img className={s.searchIcon} src="./img/search.svg" alt="search" />
+          <img className={s.searchIcon} src="img/search.svg" alt="search" />
           <input
             onChange={onChangeSearchInput}
             value={searchValue}
@@ -74,7 +70,7 @@ export const Home = ({
                 setSearchValue('')
               }}
               className={s.removeBtn}
-              src="./img/btn-remove.svg"
+              src="img/btn-remove.svg"
               alt="close-btn"
             />
           )}

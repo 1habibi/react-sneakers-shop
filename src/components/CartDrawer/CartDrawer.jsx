@@ -51,7 +51,7 @@ export const CartDrawer = ({ opened, onClickClose, onRemove, items = [] }) => {
           <img
             onClick={onClickClose}
             className={s.removeBtn}
-            src="./img/btn-remove.svg"
+            src="img/btn-remove.svg"
             alt="close-btn"
           />
         </h2>
@@ -73,7 +73,7 @@ export const CartDrawer = ({ opened, onClickClose, onRemove, items = [] }) => {
                   </div>
                   <img
                     className={s.removeBtn}
-                    src="./img/btn-remove.svg"
+                    src="img/btn-remove.svg"
                     alt="remove-btn"
                     onClick={() => onRemove(item.id)}
                   />
@@ -95,7 +95,7 @@ export const CartDrawer = ({ opened, onClickClose, onRemove, items = [] }) => {
               </div>
               <div>
                 <GreenBtn
-                  icon={'./img/arrow.svg'}
+                  icon={'img/arrow.svg'}
                   text={'Оформить заказ'}
                   isLoading={isLoading}
                   pos={'right'}
@@ -113,9 +113,7 @@ export const CartDrawer = ({ opened, onClickClose, onRemove, items = [] }) => {
                 : 'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.'
             }
             imgUrl={
-              isOrderComplete
-                ? './img/complete-order.png'
-                : './img/empty-box.png'
+              isOrderComplete ? 'img/complete-order.png' : 'img/empty-box.png'
             }
             onClick={onClickClose}
           />
